@@ -12,4 +12,4 @@ github_username:  platykun
 
 # Build settings
 markdown: kramdown
-highlighter: rogue
+pygments: rogue
