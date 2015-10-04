@@ -15,7 +15,7 @@ ElasticSearchが使えるようになる。
 
 ## elasticsearch環境構築
 
-参考：http://qiita.com/Aco-gt/items/ad351387c1ab3ad2561f
+参考：[http://qiita.com/Aco-gt/items/ad351387c1ab3ad2561f](http://qiita.com/Aco-gt/items/ad351387c1ab3ad2561f)
 
 elasticsearch 1.7.2ダウンロード
 
