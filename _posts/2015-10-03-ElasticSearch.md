@@ -23,9 +23,9 @@ elasticsearch 1.7.2ダウンロード
 
 elasticsearch-1.7.2/binディレクトリにて以下のコマンド実行
 
-./elasticsearch.bat
+`./elasticsearch.bat`
 
-http://localhost:9200/　にて、以下が表示されることを確認
+[http://localhost:9200/](http://localhost:9200/)にて、以下が表示されることを確認
 
 ```
 {
