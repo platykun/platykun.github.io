@@ -64,5 +64,12 @@ CSV River Pluginをインストール。以下のコマンドを実行
 
 `./bin/plugin.bat --install river-csv -url https://github.com/AgileWorksOrg/elasticsearch-river-csv/releases/download/2.2.1/elasticsearch-river-csv-2.2.1.zip`
 
+その後、csvを読みこませようとするがうまくいかない。
+以下のプラグインも入れてみた。
 
+`.bin/plugin.bat --install mobz/elasticsearch-head`
 
+`.bin/plugin.bat --install lukas-vlcek/bigdesk`
+
+[http://localhost:9200/_plugin/head/](http://localhost:9200/_plugin/head/)
+Elasticsearchのサイトみたいなのが表示された。
