@@ -58,11 +58,11 @@ kibana-4.1.2-windows/binディレクトリにて以下のコマンドを実行
 kuromojiをインストール。以下のコマンドを実行。
 （サイトには「bin/plugin install」と書かれているが、動作しなかった。（OSのせい？））
 
-'./bin/plugin --install elasticsearch/elasticsearch-analysis-kuromoji/2.7.0'
+`./bin/plugin --install elasticsearch/elasticsearch-analysis-kuromoji/2.7.0`
 
 CSV River Pluginをインストール。以下のコマンドを実行
 
-'./bin/plugin.bat --install river-csv -url https://github.com/AgileWorksOrg/elasticsearch-river-csv/releases/download/2.2.1/elasticsearch-river-csv-2.2.1.zip'
+`./bin/plugin.bat --install river-csv -url https://github.com/AgileWorksOrg/elasticsearch-river-csv/releases/download/2.2.1/elasticsearch-river-csv-2.2.1.zip`
 
 
 
