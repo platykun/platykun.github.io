@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title:  "Elasticsearchについて"
 date:   2015-10-03 
@@ -73,3 +73,14 @@ CSV River Pluginをインストール。以下のコマンドを実行
 
 [http://localhost:9200/_plugin/head/](http://localhost:9200/_plugin/head/)
 Elasticsearchのサイトみたいなのが表示された。
+
+### １０月６日追記作業
+
+どうもembulkを入れると良いらしい。
+
+`PowerShell -Command "& {Invoke-WebRequest http://dl.embulk.org/embulk-latest.jar -OutFile embulk.bat}"`
+
+これを実行するとエラーが出てしまう。
+PowerShellのバージョンが古いと推測したら、ver1.0だった。（最新が4.0らしい）
+[参考サイト](http://win.just4fun.biz/PowerShell/Windows7%E3%81%ABPowerShell4.0%E3%82%92%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%99%E3%82%8B%E6%89%8B%E9%A0%86.html#obb81e33)
+再起動が必要みたいだったので本日の作業おしまい。
