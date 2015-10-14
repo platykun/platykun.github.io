@@ -50,5 +50,9 @@ elasticsearchに対応させるプラグインを導入する。
 
     InvalidIndexNameException: [hogeTest] Invalid index name [hogeTest], must be lowercase
 
-#### 考察
-elastic search側でindexを生成し、その中にcvsファイルを投入する必要が有ると思われる。
+#### indexを作成して再挑戦
+
+Elasticsearchが立ち上がった状態で以下のコマンドを打つと "test" indexが作成される。
+    curl -X POST http://localhost:9200/test
+
+![実行結果](https://github.com/platykun/platykun.github.io/blob/master/_img/20151014afterInput.png)
