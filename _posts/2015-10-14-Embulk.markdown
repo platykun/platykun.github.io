@@ -61,3 +61,7 @@ Elasticsearchが立ち上がった状態で以下のコマンドを打つと "te
     curl -X POST http://localhost:9200/test
 
 ![実行結果](http://platykun.github.io/assets/20151014afterInput.png)
+
+### TODO
+
+* elasticsearch から　kibana へデータを送り、グラフ化させる
