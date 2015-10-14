@@ -1,46 +1,48 @@
 ---
 layout: post
-title:  “Embulk調査”
+title:  Embulk調査
 date:   2015-10-14 
 categories: Embulk
 ---
 
-h3. PATHの通し方(起動時にコマンドを使えるようにする)
+### PATHの通し方(起動時にコマンドを使えるようにする)
 
 .bash_profileに以下を追加する。
 
 > export PATH="$HOME/.embulk/bin:$PATH"
 
-h3. コマンド一覧
+### コマンド一覧と使い方
 
 サンプルのコマンドと、ヘルプに書いてあった説明（訳）
 
+| コマンド | 操作 |
+|:-----------|:------------|
 | embulk guess ./try1/example.yml -o config.yml | 不明なパラメータを保管して完全なコンフィグファイルを作成する |
 |embulk preview config.yml| プレビューを表示する |
-|embulk run config.yml|　何かが実行される(run a bulk load transaction.)　|
+|embulk run config.yml| ymlファイルに書かれた処理が実行される　|
 
-つまるところ、ymlファイルを作成して、
-guessコマンドで実行する（？）
-ymlファイルには、読み込むファイルのパス等が書かれる。
-プラグインの命令も同様にymlファイルに記述される。
+<br>
+ymlファイルを作成して、
+guessコマンドでファイルを整形して、
+runコマンドでymlファイルの中身が実行される。
 
-h3. プラグイン導入
+### プラグイン導入
 
 elasticsearchに対応させるプラグインを導入する。
 
-　　　　embulk gem install embulk-output-command
-　　　　embulk gem list
+    embulk gem install embulk-output-command
+    embulk gem list
 
 [embulk to elasticsearch ツール](https://github.com/muga/embulk-output-elasticsearch)
 
-h4. 考えた実行手順
+#### 考えた実行手順
 
 * Elasticsearchのサーバー起動する。
 * exampleの通りにymlファイルを作成する。
 * guessコマンドを実行する。
 * Elasticsearch上に入ってる？
 
-h4. 実際にやった手順：
+#### 実際にやった：
 
 * ymlファイルを作成する際、ポート番号を9300で指定した。
 * guessコマンドを実行すると、コマンドがElasticsearchに送られた。
@@ -48,4 +50,5 @@ h4. 実際にやった手順：
 
     InvalidIndexNameException: [hogeTest] Invalid index name [hogeTest], must be lowercase
 
-elastic search側でindexを生成し、その中にcvsファイルを投入する流れと思われる。
+#### 考察
+elastic search側でindexを生成し、その中にcvsファイルを投入する必要が有ると思われる。
