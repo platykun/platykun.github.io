@@ -55,4 +55,4 @@ elasticsearchに対応させるプラグインを導入する。
 Elasticsearchが立ち上がった状態で以下のコマンドを打つと "test" indexが作成される。
     curl -X POST http://localhost:9200/test
 
-![実行結果](https://github.com/platykun/platykun.github.io/blob/master/_img/20151014afterInput.png)
+![実行結果](http://platykun.github.io/assets/20151014afterInput.png)
