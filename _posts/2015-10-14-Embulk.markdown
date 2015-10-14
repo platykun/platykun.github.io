@@ -35,20 +35,24 @@ elasticsearchに対応させるプラグインを導入する。
 
 [embulk to elasticsearch ツール](https://github.com/muga/embulk-output-elasticsearch)
 
-#### 考えた実行手順
+### 実際に使ってみる
+
+#### 実行手順
 
 * Elasticsearchのサーバー起動する。
 * exampleの通りにymlファイルを作成する。
 * guessコマンドを実行する。
-* Elasticsearch上に入ってる？
+* Elasticsearch上に読み込んだcsvファイルが格納されていることを確認する。
 
-#### 実際にやった：
+#### 実行結果
 
-* ymlファイルを作成する際、ポート番号を9300で指定した。
+* ymlファイルを作成する際、ポート番号を9300で指定した。(elasticsearchのポート番号は9200で異なっている？)
 * guessコマンドを実行すると、コマンドがElasticsearchに送られた。
 * 受信側のelasticsearchサーバーで、エラーが発生した。
 
     InvalidIndexNameException: [hogeTest] Invalid index name [hogeTest], must be lowercase
+
+* Elasticsearchでindexを作成し、ymlファイル内で、存在するindexを指定する必要があった。
 
 #### indexを作成して再挑戦
 
