@@ -7,8 +7,11 @@ categories: ElasticSearch
 
 macbookを買ったので、
 Windowsでの環境構築をMacでの行った。
+
 ２回目だけあって環境構築自体スムーズに行えた。
+
 - kibanaはまだ入れてない…
+
 - 硬いキーボードになかなか慣れない（苦
 
 elasticsearchのインストールまでできた。
