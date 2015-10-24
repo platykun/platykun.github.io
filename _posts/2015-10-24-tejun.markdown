@@ -5,8 +5,6 @@ date:   2015-10-24
 categories: matome
 ---
 
-作業手順のwiki的なものとして
-
 ### 作業手順概要
 
 * csvファイルの作成
