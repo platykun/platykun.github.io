@@ -1,6 +1,6 @@
-﻿---
+---
 layout: post
-title:  作業手順のまとめ
+title:  作業手順まとめ
 date:   2015-10-24
 categories: matome
 ---
