@@ -1,0 +1,35 @@
+﻿---
+layout: post
+title:  作業手順のまとめ
+date:   2015-10-24
+categories: matome
+---
+
+作業手順のwiki的なものとして
+
+### 作業手順概要
+
+* csvファイルの作成
+* Embulkを用いてelasticsearchへ取り込む
+* Kibanaでグラフ化
+
+### 作業手順
+
+#### csvファイルの作成
+
+表示させたいデータが記述されたcsvファイルを作成する。
+
+
+#### Embulkを用いてelasticsearchへ取り込む
+
+csvファイルをelastissearchに読み込ませるためのツールとしてEmbulkを用いる。
+
+* yml定義ファイルを作成する。
+* embulkコマンドを用いて不明パラメータの補完を行う。
+	embulk guess before.yml -o after.yml
+* elasticsearchを起動する。
+	./elasticsearch
+* embulkによってymlファイルの処理を実行する。
+	embulk run after.yml
+
+#### Kibanaでグラフ化
