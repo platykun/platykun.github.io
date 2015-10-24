@@ -24,10 +24,20 @@ csvファイルをelastissearchに読み込ませるためのツールとしてE
 
 * yml定義ファイルを作成する。
 * embulkコマンドを用いて不明パラメータの補完を行う。
-	embulk guess before.yml -o after.yml
-* elasticsearchを起動する。
-	./elasticsearch
-* embulkによってymlファイルの処理を実行する。
-	embulk run after.yml
 
-#### Kibanaでグラフ化
+'embulk guess before.yml -o after.yml'
+* elasticsearchを起動する。
+
+'./elasticsearch'
+* embulkによってymlファイルの処理を実行する。
+
+'embulk run after.yml'
+
+#### Kibanaでグラフ化する。
+
+* Setting-Indexタブから、インデックスを作成する。
+インデックス名の作成をする。
+
+* Visualizeタブからグラフを作成する。
+
+* Dashboadタブから作成したグラフを配置する。
