@@ -27,3 +27,12 @@ ymlファイルに日付データの定義を記述してからcsvファイル�
 * ymlファイルの文法について調べる(日付型指定、input,output指定方法)
 * elastissearch使い方をまとめる(記述するとしたらテーブル追加のみ？)
 * kibana使い方(ここが割と膨大なので、一番大変な気がする)
+
+elasticsearchの使いかたメモ
+
+##indexの追加方法
+
+IndicesタブのnewIndexボタンを押下
+index名を記入する。
+> 大文字不可、半角限定。
+
