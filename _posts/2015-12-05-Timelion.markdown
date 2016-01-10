@@ -1,0 +1,24 @@
+---
+layout: post
+title:  Timelion
+date:   2015-12-05
+categories: timelion
+---
+
+# 聞いた情報
+
+KibanaのプラグインとしてTimelionがあり、それを使うといいらしい
+
+* Kibana4.3.0(2015/12/05最新版)をダウンロード
+** elasticsearch2.1.0に最新化する必要あり
+** 最新化にあたり、データも入れ直しになった。
+* timelionをインストール
+
+`bin/kibana plugin -i kibana/timelion`
+
+今まで通り実行してもエラーが出たので、各ツールの最新化
+
+embulk 0.7.5 → 0.7.10
+ `curl --create-dirs -o ~/.embulk/bin/embulk -L "http://dl.embulk.org/embulk-latest.jar"`
+
+それでも動かない。困った。
